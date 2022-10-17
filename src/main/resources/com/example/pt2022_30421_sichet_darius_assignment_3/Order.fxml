@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt2022_30421_sichet_darius_assignment_3.Controller.OrderController">
+    <children>
+        <TableView fx:id="orderClientTable" layoutY="42.0" prefHeight="190.0" prefWidth="383.0">
+            <columns>
+                <TableColumn fx:id="idOrderClientTable" prefWidth="75.0" text="id" />
+                <TableColumn fx:id="nameOrderClientTable" prefWidth="75.0" text="name" />
+                <TableColumn fx:id="addressOrderClientTable" prefWidth="75.0" text="address" />
+                <TableColumn fx:id="emailOrderClientTable" prefWidth="99.199951171875" text="email" />
+                <TableColumn fx:id="ageOrderClientTable" prefWidth="58.4000244140625" text="age" />
+            </columns>
+        </TableView>
+        <TableView fx:id="orderProductTable" layoutY="266.0" prefHeight="200.0" prefWidth="389.0">
+            <columns>
+                <TableColumn fx:id="idOrderProductTable" prefWidth="65.60003662109375" text="id" />
+                <TableColumn fx:id="nameOrderProductTable" prefWidth="123.199951171875" text="name" />
+                <TableColumn fx:id="stockOrderProductTable" prefWidth="92.0" text="stock" />
+                <TableColumn fx:id="priceOrderProductTable" prefWidth="108.800048828125" text="price" />
+            </columns>
+        </TableView>
+        <Label layoutX="76.0" layoutY="14.0" prefHeight="27.0" prefWidth="127.0" text="Client Table:">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="76.0" layoutY="238.0" prefHeight="27.0" prefWidth="127.0" text="Product Table:">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="orderClientID" layoutX="451.0" layoutY="158.0" prefHeight="26.0" prefWidth="94.0" />
+        <TextField fx:id="orderProductID" layoutX="451.0" layoutY="226.0" prefHeight="26.0" prefWidth="94.0" />
+        <TextField fx:id="orderQuantity" layoutX="451.0" layoutY="290.0" prefHeight="26.0" prefWidth="94.0" />
+        <Label layoutX="448.0" layoutY="128.0" text="Select Client ID:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="448.0" layoutY="195.0" text="Select Product ID:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="447.0" layoutY="266.0" text="Select Quantity:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="451.0" layoutY="329.0" mnemonicParsing="false" onAction="#confirmButton" text="Confirm:" />
+        <Button layoutX="565.0" layoutY="416.0" mnemonicParsing="false" onAction="#backOrder" text="Back:" />
+    </children>
+</AnchorPane>

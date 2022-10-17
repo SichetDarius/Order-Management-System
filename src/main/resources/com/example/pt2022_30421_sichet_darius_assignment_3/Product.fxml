@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt2022_30421_sichet_darius_assignment_3.Controller.ProductController">
+    <children>
+        <Button layoutX="468.0" layoutY="267.0" mnemonicParsing="false" onAction="#insertProduct" text="Insert Product:" />
+        <Button layoutX="466.0" layoutY="304.0" mnemonicParsing="false" onAction="#deleteProduct" text="Delete Product:" />
+        <Button layoutX="468.0" layoutY="338.0" mnemonicParsing="false" onAction="#updateProduct" text="Update Product:" />
+        <Button layoutX="558.0" layoutY="378.0" mnemonicParsing="false" onAction="#backProduct" text="Back:" />
+        <TableView fx:id="productTable" layoutX="14.0" layoutY="73.0" prefHeight="291.0" prefWidth="367.0">
+            <columns>
+                <TableColumn fx:id="idProductTable" prefWidth="53.60003471374512" text="id" />
+                <TableColumn fx:id="nameProductTable" prefWidth="133.60004425048828" text="name" />
+                <TableColumn fx:id="stockProductTable" prefWidth="83.20001220703125" text="stock" />
+                <TableColumn fx:id="priceProductTable" prefWidth="97.5999755859375" text="price" />
+            </columns>
+        </TableView>
+        <TextField fx:id="idProduct" layoutX="452.0" layoutY="78.0" prefHeight="26.0" prefWidth="162.0" />
+        <TextField fx:id="nameProduct" layoutX="456.0" layoutY="126.0" prefHeight="26.0" prefWidth="161.0" />
+        <TextField fx:id="stockProduct" layoutX="455.0" layoutY="178.0" prefHeight="26.0" prefWidth="162.0" />
+        <TextField fx:id="priceProduct" layoutX="456.0" layoutY="227.0" prefHeight="26.0" prefWidth="162.0" />
+        <Label layoutX="396.0" layoutY="82.0" text="ID:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="393.0" layoutY="129.0" text="Name:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="394.0" layoutY="181.0" text="Stock:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="396.0" layoutY="230.0" text="Price:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="216.0" layoutY="33.0" prefHeight="27.0" prefWidth="194.0" text="Product Management">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

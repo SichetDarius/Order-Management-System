@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="394.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt2022_30421_sichet_darius_assignment_3.Controller.ClientController">
+   <children>
+      <TableView fx:id="clientTable" layoutX="14.0" layoutY="16.0" prefHeight="362.0" prefWidth="420.0">
+        <columns>
+          <TableColumn fx:id="idClientTable" prefWidth="33.19997978210449" text="id" />
+          <TableColumn fx:id="nameClientTable" prefWidth="106.60001373291016" text="name" />
+            <TableColumn fx:id="addressClientTable" prefWidth="134.4000244140625" text="address" />
+            <TableColumn fx:id="emailClientTable" prefWidth="99.20001220703125" text="email" />
+            <TableColumn fx:id="ageClientTable" prefWidth="44.0" text="age" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idClient" layoutX="521.0" layoutY="38.0" prefHeight="26.0" prefWidth="170.0" />
+      <TextField fx:id="nameClient" layoutX="520.0" layoutY="77.0" prefHeight="26.0" prefWidth="170.0" />
+      <TextField fx:id="addressClient" layoutX="520.0" layoutY="114.0" prefHeight="26.0" prefWidth="170.0" />
+      <TextField fx:id="emailClient" layoutX="520.0" layoutY="152.0" prefHeight="26.0" prefWidth="170.0" />
+      <TextField fx:id="ageClient" layoutX="520.0" layoutY="188.0" prefHeight="26.0" prefWidth="170.0" />
+      <Label layoutX="450.0" layoutY="40.0" prefHeight="22.0" prefWidth="21.0" text="ID:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="79.0" prefHeight="22.0" prefWidth="66.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="116.0" prefHeight="22.0" prefWidth="54.0" text="Adress:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="448.0" layoutY="154.0" prefHeight="22.0" prefWidth="65.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="190.0" text="Age:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="620.0" layoutY="354.0" mnemonicParsing="false" onAction="#backClient" text="Back:" />
+      <Button layoutX="527.0" layoutY="234.0" mnemonicParsing="false" onAction="#insertClient" text="Insert Client" />
+      <Button layoutX="527.0" layoutY="316.0" mnemonicParsing="false" onAction="#updateClient" text="Update Client" />
+      <Button layoutX="527.0" layoutY="277.0" mnemonicParsing="false" onAction="#deleteClient" text="Delete Client" />
+   </children>
+</AnchorPane>

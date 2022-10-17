@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt2022_30421_sichet_darius_assignment_3.Controller.LoginController">
+    <children>
+        <Button layoutX="253.0" layoutY="131.0" mnemonicParsing="false" onAction="#manageClient" text="Manage Client" />
+        <Button layoutX="248.0" layoutY="174.0" mnemonicParsing="false" onAction="#manageProduct" text="Manage Product" />
+        <Button layoutX="253.0" layoutY="217.0" mnemonicParsing="false" onAction="#manageOrder" text="Manage Order" />
+        <Button layoutX="274.0" layoutY="265.0" mnemonicParsing="false" text="Button" />
+        <Button layoutX="274.0" layoutY="307.0" mnemonicParsing="false" text="Button" />
+        <Button layoutX="274.0" layoutY="348.0" mnemonicParsing="false" text="Button" />
+        <Label layoutX="120.0" layoutY="54.0" text="Order Management Application">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
